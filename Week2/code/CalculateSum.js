@@ -11,7 +11,7 @@ const CalculateSum = (n)=>{
 }
 //writting apis for grtting the data
 app.get("/",((req,res)=>{
-    const n = req.query.n;
+    const n = req.query.n;//it is used for query parameter so that you can add value of n in url
     const ans = CalculateSum(n);
     res.send("HI your answer is "+ ans);
 }))
