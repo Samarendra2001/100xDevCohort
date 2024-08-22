@@ -14,5 +14,4 @@ app.post("/health-check-up",((req,res)=>{
         response
     })
 }))
-
 app.listen(3000);
