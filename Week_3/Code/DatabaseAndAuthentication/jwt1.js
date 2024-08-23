@@ -27,6 +27,8 @@ function decodejwt(token){
 
 console.log(decodejwt(ans));
 
+//we put in try catch block bcz if token is not valid jwt.verify will return jwt is  malformed it gets panic. it will not return false that's why
+
 function verifyJwt(token){
     try{
         jwt.verify(token,jwtPassword);
