@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="buttonParent"></div>
+ <script>
+    let state = {
+        count: 0
+    }
+    console.log(state.count)
+    function onButtonPress(){
+        state.count++;
+        console.log(state.count)
+        buttonComponentRerender()
+    }
+    function buttonComponentRerender(){
+        document.getElementById("buttonParent").innerHTML = " ";
+        const component = buttonComponent(state.count)
+        document.getElementById("buttonParent").appendChild(component)
+    }
+    function buttonComponent(count){
+        const button = document.createElement("button");
+        button.innerHTML = `Counter ${count}`;
+        button.setAttribute("onClick",`onButtonPress()` )
+        return button;
+    }
+    buttonComponentRerender();//first this functon calls get executed
+ </script>
+   
+</body>
+</html>
+<!-- //when button buttonComponentRerenderget executed it will emptied the counter button and append 
+another one with count value increases by one and so on. -->
