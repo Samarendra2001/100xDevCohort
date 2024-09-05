@@ -106,3 +106,13 @@ function pushExample(arr, element) {
     console.log("After sort:", arr); //Original Array: [ 5, 2, 3, 4, 1 ] After sort: [ 1, 2, 3, 4, 5 ]
   }
   sortExample([5, 2, 3, 4, 1]);
+
+  let fruits = ['apple', 'banana', 'cherry', 'date', 'fig', 'grape'];
+// Remove 2 elements starting from index 2
+  fruits.splice(2, 2);
+  console.log(fruits);
+  //splice(2, 2):
+//Index 2: The starting point is the element 'cherry'.
+//2: The number of elements to remove is 2.
+//if the second index was 1 then 1 element would have removed
+//First index means starting point of index number
