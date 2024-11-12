@@ -13,12 +13,12 @@
 //   }
 //   getLength("Hello World"); //o/p= 11
   
-//   // indexOf
-//   function findIndexOf(str, target) {
-//     console.log("Original String:", str);
-//     console.log("Index:", str.indexOf(target));
-//   }
-//   findIndexOf("Hello World", "World");//o/p = 6
+  // indexOf
+  // function findIndexOf(str, target) {
+  //   console.log("Original String:", str);
+  //   console.log("Index:", str.indexOf(target));
+  // }
+  // findIndexOf("Hello World", "World");//o/p = 6
   
 //   // lastIndexOf
 //   function findLastIndexOf(str, target) {
@@ -32,7 +32,7 @@
 //     console.log("Original String:", str);
 //     console.log("After slice:", str.slice(start, end));
 //   }
-//   getSlice("Hello World", 0, 5); //o/p = Hello slice means start and end-1 here it will print Hello as 0 th index and 5-1 = 4th index
+//   getSlice("Hello World", 0, 5); //o/p = Hello. slice means start and end-1 here it will print Hello as 0 th index and 5-1 = 4th index
   
   // substring
   function getSubstring(str, start, end) {
