@@ -1,7 +1,4 @@
-const firstname:string  = "Samar";
-console.log("Good morning", firstname);
-
-function greet(firstName:string){
-    console.log("hello" + firstName)
+function greet1(firstName:string){
+    console.log("hi there "+ firstName);
 }
-greet("Samar");
+greet1("sam");

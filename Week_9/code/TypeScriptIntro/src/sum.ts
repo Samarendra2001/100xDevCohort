@@ -3,3 +3,4 @@ function sum(a:number , b:number): number {//third number is of return type
 }
 const value = sum(5,6);
 console.log("sum is " + value);
+ 
