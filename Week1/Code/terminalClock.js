@@ -10,8 +10,8 @@ const displayTime = ()=>{
     //Add leading zeros if necessary
     //if single digit it will add zero to it 
 
-    hours = hours.toString().padStart(2, '0');
-    minutes = minutes.toString().padStart(2, '0');
+    hours = hours.toString().padStart(2, '0');//.padStart(targetLength, padString) ensures the string is at least 2 characters long.                                          
+    minutes = minutes.toString().padStart(2, '0'); //If the original string is less than 2 characters, it adds '0' at the beginning.
     seconds = seconds.toString().padStart(2, '0');
 
 
