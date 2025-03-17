@@ -53,8 +53,8 @@
     console.log("Original String:", str);
     console.log("After split:", str.split(separator));
   }
-  splitString("Hello World", " ");//it will split string where space is there . o/p = ["Hello","World"]
-  
+  splitString("Hello World", "");//it will split string where space is there . o/p = ["Hello","World"]
+  splitString("Hello World", "l")//After split: [ 'He', '', 'o Wor', 'd' ]
   // // trim
   // function trimString(str) {
   //   console.log("Original String:", str);
